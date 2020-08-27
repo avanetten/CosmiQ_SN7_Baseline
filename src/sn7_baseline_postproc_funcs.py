@@ -96,12 +96,12 @@ def calculate_iou(pred_poly, test_data_GDF):
     return iou_GDF
 
     
-def track_footprint_addresses(json_dir, out_dir,
+def track_footprint_identifiers(json_dir, out_dir,
                           min_iou=0.25, iou_field='iou_score', id_field='Id',
                           reverse_order=False,     
                           verbose=True, super_verbose=False):
     '''
-    Track footprint addresses in the deep time stack.
+    Track footprint identifiers in the deep time stack.
     We need to track the global gdf instead of just the gdf of t-1.
     '''
         

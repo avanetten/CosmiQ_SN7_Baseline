@@ -4,7 +4,7 @@
 
 #  The SpaceNet 7 Baseline Algorithm 
 
-The [SpaceNet 7](https://spacenet.ai/sn7-challenge/) dataset contains ~100 data cubes of monthly Planet 4 meter resolution satellite imagery taken over a two year time span, with attendant building footprint labels.  The goal of the SpaceNet 7 Challenge is to identify and track building footprints and addresses through the multiple seasons and conditions of the dataset.  
+The [SpaceNet 7](https://spacenet.ai/sn7-challenge/) dataset contains ~100 data cubes of monthly Planet 4 meter resolution satellite imagery taken over a two year time span, with attendant building footprint labels.  The goal of the SpaceNet 7 Challenge is to identify and track building footprints and unique identifiers through the multiple seasons and conditions of the dataset.  
 
 To address this problem we propose the SpaceNet 7 Baseline algorithm.  This algorithm is a multi-step process that refines a deep learning segmentation model prediction mask into building footprint polygons, and then matches building identifiers (i.e. addresses) between time steps (see blog...).  While the goal is akin to traditional video object tracking, the semi-static nature of building footprints and extremely small size of the objects introduces unique challenges. 
 
